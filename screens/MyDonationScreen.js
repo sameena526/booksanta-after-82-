@@ -30,21 +30,21 @@ export default class MyDonationScreen extends Component {
 
    keyExtractor = (item, index) => index.toString()
 
-   renderItem = ( {item, i} ) =>(
-     <ListItem
-       key={i}
-       title={item.book_name}
-       subtitle={"Requested By : " + item.requested_by +"\nStatus : " + item.request_status}
-       leftElement={<Icon name="book" type="font-awesome" color ='#696969'/>}
-       titleStyle={{ color: 'black', fontWeight: 'bold' }}
-       rightElement={
+   renderItem = ( {item, i} ) =>{return(
+     <View>
+     <Icon name="book" type="font-awesome" color ='#696969'/> 
+      <Text>  {item.book_name} </Text>
+      <Text>  {"Requested By : " + item.requested_by +"\nStatus : " + item.request_status} </Text>
+        
+        
+        
            <TouchableOpacity style={styles.button}>
              <Text style={{color:'#ffff'}}>Send Book</Text>
            </TouchableOpacity>
-         }
+          
        bottomDivider
-     />
-   )
+      </View>
+   )}
 
 
    componentDidMount(){
