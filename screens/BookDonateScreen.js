@@ -50,7 +50,7 @@ export default class BookDonateScreen extends Component{
               <Text style={{color:'#ffff'}}>View</Text>
             </TouchableOpacity>
            
-        bottomDivider
+        
       </View>
     )
   }
