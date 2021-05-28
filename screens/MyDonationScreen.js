@@ -42,7 +42,7 @@ export default class MyDonationScreen extends Component {
              <Text style={{color:'#ffff'}}>Send Book</Text>
            </TouchableOpacity>
           
-       bottomDivider
+       
       </View>
    )}
 
